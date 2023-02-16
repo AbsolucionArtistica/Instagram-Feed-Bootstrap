@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <ul class="nav text-bg-light p-3">
+            <i class="fa-brands fa-instagram"></i>
+            <p id="instagramLogo">Instagram</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Add the caption of your post here"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-light" type="button"><i class="fa-solid fa-camera"></i></button>
+                                <button class="btn btn-light" type="button"><i
+                                        class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle m-3" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy anda Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </ul>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
+                    </svg></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="a.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+                        <path
+                            d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                    </svg></a>
+            </li>
+        </ul>
+        <div class="container-fluid">
+            <div class="row g-2">
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">9/9</p>
+                            <h5 class="card-title">Botas Veganas</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1652030817.jpg?crop=0.891xw:1.00xh;0.109xw,0&resize=640:*"
+                            alt="maceta">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">8/9</p>
+                            <h5 class="card-title">¿Que hago con mis calabazas después de Halloween?</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://imag.bonviveur.com/jack-olantern-la-popular-calabaza-de-halloween.jpg"
+                            alt="calabaza">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">7/9</p>
+                            <h5 class="card-title">¡¡¡"Pie Grande" es real y podría ser tu vecino!!!</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://resizer.glanacion.com/resizer/2o-xCYl2cPRUwcNSSFLCkLQCCxs=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/E3KHM7XKNRDCXBC25VIRBGGOIE.png"
+                            alt="pieGrande">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">6/9</p>
+                            <h5 class="card-title">"Pan con queso" la cura del envejecimiento</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="http://assets.kraftfoods.com/recipe_images/opendeploy/106866_MXM_K2526V16S_OR1_H_640x428.jpg">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">5/9</p>
+                            <h5 class="card-title">Fui a ver Deadpool 2 :)</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://media.revistagq.com/photos/5ca5f8ad33e75106961536d3/4:3/w_1808,h_1356,c_limit/deadpool2_7103.png">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">4/9</p>
+                            <h5 class="card-title">Selfie de mi compa</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://s1.eestatic.com/2017/07/14/ciencia/medio-ambiente/medio_ambiente_231238002_39634878_854x640.jpg">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">3/9</p>
+                            <h5 class="card-title">Gatos al por mayor</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://images.hola.com/imagenes/mascotas/20220902216354/consejos-socializar-gato-dn/1-132-506/consejos-socializar-gato-t.jpg?tx=w_680">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">2/9</p>
+                            <h5 class="card-title">Chainsaw man esta muy bueno</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://beebom.com/wp-content/uploads/2022/10/All-Opening-and-Ending-Songs-of-Chainsaw-Man.jpg">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-end m-0">1/9</p>
+                            <h5 class="card-title">El pibe motosierra</h5>
+                        </div>
+                        <img class="mg-fluid"
+                            src="https://www.latercera.com/resizer/inH6VMKMVoHumIBMDdFxdsH5LRM=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/UVP3M6WRORG7HBTC2S3YJ5NK4Y.jpg">
+                        <h5 id="likes">121 likes</h5>
+                        <div class="card-body">Había un niño que tenía muy mal carácter. Un día, su padre le dio una bolsa con clavos y le dijo que cada vez que perdiera la calma, clavase un clavo en la cerca del patio de la casa. El primer día, el niño clavó 37 clavos. Al día siguiente, menos, y así el resto de los días.</div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
